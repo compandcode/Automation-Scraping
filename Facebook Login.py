@@ -2,7 +2,7 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 import random
 
-PATH = "C:\Program Files (x86)\chromedriver.exe"
+PATH = "PUT THE PATH HERE!!"
 driver = webdriver.Chrome(PATH)
 
 currentUrl = driver.get("https://en-gb.facebook.com/")
