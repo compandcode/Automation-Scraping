@@ -1,10 +1,13 @@
 from selenium import webdriver
 import time
 
-#"C:\Program Files (x86)\chromedriver.exe"
-PATH = "C:\Users\Vikra\Desktop\New folder\Automation-Scraping\BlogPostViews\chromedriver.exe"
+PATH = "C:\Program Files (x86)\chromedriver.exe"
 driver = webdriver.Chrome(PATH)
 
 driver.get("https://www.thenibblebyte.com/blog/categories/compandcode")
 time.sleep(10)
-driver.close()
+
+blogPosts = driver.find_element_by_class_name("MlM6L").text
+
+for post in blogPosts:
+    print(blogPosts)

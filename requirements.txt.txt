@@ -1,3 +1,5 @@
 selenium
 
 https://stackoverflow.com/questions/52751053/python-unable-to-import-selenium-using-jupyter
+
+https://anaconda.org/conda-forge/selenium
